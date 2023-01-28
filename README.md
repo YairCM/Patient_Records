@@ -1,1 +1,2 @@
 # Patient_Records
+The code is for a GUI application that allows users to save patient records including their name, gender, and age. The application also displays the saved records in a table, grouped by age ranges. The application uses the Tkinter library to create the GUI elements, such as labels, buttons, and a table, and the sqlite3 library to interact with a local database to store and retrieve the patient records. It's important to note that all patient data used in this application is fictitious and does not correspond to any real individuals
