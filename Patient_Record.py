@@ -51,14 +51,14 @@ class MainWindow:
         self.message.grid(row = 3, sticky = W + E, columnspan=2)
 
         # Table
-        columns = ['NOMBRE','<4','5-9','10-14','15-19','20-24','25-44','45-49','50-59','60-64', '>65']
+        columns = ['NAME','<4','5-9','10-14','15-19','20-24','25-44','45-49','50-59','60-64', '>65']
         self.tree = ttk.Treeview(height=15, columns=columns, show = 'tree headings')
         self.tree.grid(row = 4, columnspan=2)
         
         # Define headings
         self.tree.column('#0', width=100)
         for i in columns:
-            self.tree.column('NOMBRE', width=200)
+            self.tree.column('NAME', width=200)
             self.tree.column(i, width=55)
             self.tree.heading(i, text=i, anchor= CENTER)
 
